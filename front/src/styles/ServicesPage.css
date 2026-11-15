@@ -1,0 +1,317 @@
+
+/* ========================================
+   SERVICES PAGE
+======================================== */
+
+.services-page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+/* ========================================
+   PAGE HERO
+======================================== */
+
+.services-hero {
+  padding: 85px 24px 75px;
+  background:
+    radial-gradient(
+      ellipse at 75% 40%,
+      rgba(150, 117, 245, 0.13),
+      transparent 55%
+    ),
+    var(--color-background);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.services-page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-hero h1 {
+  margin-top: 20px;
+  color: var(--color-text);
+  font-size: clamp(42px, 5vw, 58px);
+  font-weight: 750;
+  letter-spacing: -2px;
+}
+
+.services-hero h1 span {
+  color: var(--color-primary);
+}
+
+.services-hero > .services-page-container > p {
+  max-width: 600px;
+  margin-top: 18px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ========================================
+   SERVICES CATALOG
+======================================== */
+
+.services-catalog {
+  padding: 75px 24px 100px;
+}
+
+.services-page-heading {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.services-page-heading h2 {
+  color: var(--color-text);
+  font-size: 29px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+}
+
+.services-page-heading p {
+  margin-top: 9px;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.services-count {
+  padding: 9px 15px;
+  background-color: rgba(150, 117, 245, 0.1);
+  border: 1px solid rgba(150, 117, 245, 0.2);
+  border-radius: 30px;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.services-page-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+/* ========================================
+   SERVICE CARD
+======================================== */
+
+.services-page-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 315px;
+  padding: 27px;
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 13px;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.services-page-card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+}
+
+.services-page-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.services-page-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  background-color: rgba(150, 117, 245, 0.12);
+  border-radius: 12px;
+  color: var(--color-primary);
+}
+
+.services-category {
+  padding: 7px 10px;
+  background-color: rgba(150, 117, 245, 0.08);
+  border-radius: 20px;
+  color: var(--color-primary);
+  font-size: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.services-page-card h3 {
+  margin-top: 23px;
+  color: var(--color-text);
+  font-size: 18px;
+  font-weight: 650;
+}
+
+.services-card-description {
+  margin-top: 12px;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.services-card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 25px;
+}
+
+.services-card-duration {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+}
+
+.services-card-duration svg {
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.services-booking-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: gap 0.2s ease;
+}
+
+.services-booking-link:hover {
+  gap: 12px;
+}
+
+/* ========================================
+   CALL TO ACTION
+======================================== */
+
+.services-page-cta {
+  padding: 65px 24px;
+  background:
+    radial-gradient(
+      ellipse at 85% 50%,
+      rgba(150, 117, 245, 0.15),
+      transparent 60%
+    ),
+    var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.services-cta-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.services-cta-content h2 {
+  color: var(--color-text);
+  font-size: 29px;
+  font-weight: 700;
+  letter-spacing: -0.7px;
+}
+
+.services-cta-content p {
+  margin-top: 12px;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* ========================================
+   RESPONSIVE DESIGN
+======================================== */
+
+@media (max-width: 1000px) {
+  .services-page-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 65px 20px;
+  }
+
+  .services-catalog {
+    padding: 60px 20px 75px;
+  }
+
+  .services-page-heading h2 {
+    font-size: 25px;
+  }
+
+  .services-cta-content {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .services-cta-content h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 520px) {
+  .services-hero {
+    padding: 50px 18px;
+  }
+
+  .services-hero h1 {
+    font-size: 40px;
+  }
+
+  .services-hero > .services-page-container > p {
+    font-size: 13px;
+  }
+
+  .services-catalog {
+    padding: 50px 18px 60px;
+  }
+
+  .services-page-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .services-page-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-page-card {
+    min-height: 290px;
+    padding: 23px;
+  }
+
+  .services-page-cta {
+    padding: 50px 18px;
+  }
+
+  .services-cta-content h2 {
+    font-size: 24px;
+  }
+
+  .services-cta-content .button {
+    width: 100%;
+  }
+}

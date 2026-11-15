@@ -1,0 +1,486 @@
+
+.photographer-dashboard {
+  width: 100%;
+  padding: 48px 24px 72px;
+}
+
+.photographer-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.photographer-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.photographer-eyebrow {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.photographer-heading h1 {
+  margin: 0 0 9px;
+  color: var(--color-text);
+  font-size: clamp(28px, 4vw, 38px);
+  line-height: 1.2;
+}
+
+.photographer-heading p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.photographer-date {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 15px;
+  border: 1px solid var(--color-border);
+  border-radius: 9px;
+  background: var(--color-surface);
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.photographer-date svg {
+  color: var(--color-primary);
+}
+
+.photographer-welcome {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 25px;
+  padding: 25px;
+  border: 1px solid rgba(150, 117, 245, 0.25);
+  border-radius: var(--border-radius);
+  background: linear-gradient(
+    110deg,
+    rgba(150, 117, 245, 0.13),
+    rgba(150, 117, 245, 0.035)
+  );
+}
+
+.photographer-welcome-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  border-radius: 14px;
+  background: rgba(150, 117, 245, 0.18);
+  color: var(--color-primary-hover);
+}
+
+.photographer-welcome h2 {
+  margin: 0 0 7px;
+  color: var(--color-text);
+  font-size: 19px;
+}
+
+.photographer-welcome p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.photographer-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.photographer-stat-card {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-height: 105px;
+  padding: 19px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background: var(--color-surface);
+}
+
+.photographer-stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 11px;
+}
+
+.photographer-stat-icon.purple {
+  background: rgba(150, 117, 245, 0.15);
+  color: var(--color-primary-hover);
+}
+
+.photographer-stat-icon.green {
+  background: rgba(53, 184, 121, 0.13);
+  color: var(--color-success);
+}
+
+.photographer-stat-icon.yellow {
+  background: rgba(230, 182, 92, 0.13);
+  color: var(--color-warning);
+}
+
+.photographer-stat-icon.blue {
+  background: rgba(85, 157, 220, 0.13);
+  color: #70b5f0;
+}
+
+.photographer-stat-card span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.photographer-stat-card strong {
+  color: var(--color-text);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.photographer-content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.65fr) minmax(280px, 1fr);
+  align-items: start;
+  gap: 20px;
+}
+
+.photographer-panel {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background: var(--color-surface);
+}
+
+.photographer-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 22px 23px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.photographer-panel-header h2 {
+  margin: 0 0 6px;
+  color: var(--color-text);
+  font-size: 17px;
+}
+
+.photographer-panel-header p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.photographer-panel-header > svg {
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.photographer-bookings {
+  display: flex;
+  flex-direction: column;
+  padding: 0 22px;
+}
+
+.photographer-booking {
+  display: grid;
+  grid-template-columns: 75px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 16px;
+  padding: 21px 0;
+}
+
+.photographer-booking + .photographer-booking {
+  border-top: 1px solid var(--color-border);
+}
+
+.photographer-booking-time {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.photographer-booking-time strong {
+  color: var(--color-text);
+  font-size: 17px;
+}
+
+.photographer-booking-time span {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+}
+
+.photographer-booking-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.photographer-booking-info > strong {
+  overflow: hidden;
+  color: var(--color-text);
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.photographer-booking-info > span:nth-child(2) {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.photographer-booking-status {
+  width: fit-content;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.photographer-booking-status.confirmed {
+  background: rgba(53, 184, 121, 0.13);
+  color: var(--color-success);
+}
+
+.photographer-booking-status.waiting {
+  background: rgba(230, 182, 92, 0.13);
+  color: var(--color-warning);
+}
+
+.photographer-confirm-button {
+  padding: 8px 10px;
+  border: 1px solid rgba(150, 117, 245, 0.5);
+  border-radius: 7px;
+  background: rgba(150, 117, 245, 0.1);
+  color: var(--color-primary-hover);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.photographer-confirm-button:hover {
+  background: rgba(150, 117, 245, 0.2);
+}
+
+.photographer-confirmed-icon {
+  color: var(--color-success);
+}
+
+.photographer-side-panel {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background: var(--color-surface);
+}
+
+.photographer-shortcuts {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 18px;
+}
+
+.photographer-shortcut {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 15px 5px;
+  border: none;
+  border-bottom: 1px solid var(--color-border);
+  background: transparent;
+  color: var(--color-text);
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.photographer-shortcut:last-child {
+  border-bottom: none;
+}
+
+.photographer-shortcut:hover {
+  background: rgba(150, 117, 245, 0.05);
+}
+
+.photographer-shortcut-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 9px;
+  background: rgba(150, 117, 245, 0.13);
+  color: var(--color-primary-hover);
+}
+
+.photographer-shortcut > span:nth-child(2) {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.photographer-shortcut strong {
+  color: var(--color-text);
+  font-size: 12px;
+}
+
+.photographer-shortcut small {
+  color: var(--color-text-secondary);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.photographer-shortcut > svg {
+  flex-shrink: 0;
+  color: var(--color-text-secondary);
+}
+
+.photographer-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin: 12px 18px 18px;
+  padding: 15px;
+  border: 1px solid rgba(150, 117, 245, 0.2);
+  border-radius: 9px;
+  background: rgba(150, 117, 245, 0.07);
+}
+
+.photographer-tip > svg {
+  flex-shrink: 0;
+  color: var(--color-primary);
+}
+
+.photographer-tip strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--color-text);
+  font-size: 12px;
+}
+
+.photographer-tip p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1050px) {
+  .photographer-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .photographer-content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .photographer-dashboard {
+    padding: 32px 15px 50px;
+  }
+
+  .photographer-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .photographer-welcome {
+    align-items: flex-start;
+    padding: 18px;
+  }
+
+  .photographer-welcome-icon {
+    width: 46px;
+    height: 46px;
+  }
+
+  .photographer-welcome h2 {
+    font-size: 16px;
+  }
+
+  .photographer-stats {
+    gap: 10px;
+  }
+
+  .photographer-stat-card {
+    gap: 10px;
+    min-height: 88px;
+    padding: 12px;
+  }
+
+  .photographer-stat-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .photographer-stat-card span {
+    font-size: 10px;
+  }
+
+  .photographer-stat-card strong {
+    font-size: 21px;
+  }
+
+  .photographer-panel-header {
+    padding: 18px;
+  }
+
+  .photographer-bookings {
+    padding: 0 15px;
+  }
+
+  .photographer-booking {
+    grid-template-columns: 55px minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .photographer-confirm-button,
+  .photographer-confirmed-icon {
+    grid-column: 2;
+    justify-self: start;
+  }
+
+  .photographer-booking-time strong {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .photographer-stats {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,461 @@
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+.admin-welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  background: linear-gradient(120deg, #252a31, #1b1e23);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.admin-eyebrow {
+  color: var(--color-primary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.admin-welcome h1 {
+  margin: 12px 0 8px;
+  font-size: clamp(24px, 3vw, 32px);
+}
+
+.admin-welcome p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.admin-welcome-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  color: var(--color-primary);
+  background: rgba(150, 117, 245, 0.13);
+  border-radius: 16px;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.admin-stat-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.admin-stat-icon,
+.admin-quick-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+}
+
+.admin-stat-icon.purple,
+.admin-quick-icon.purple {
+  color: #a78bfa;
+  background: rgba(150, 117, 245, 0.14);
+}
+
+.admin-stat-icon.blue,
+.admin-quick-icon.blue {
+  color: #65a8f5;
+  background: rgba(101, 168, 245, 0.13);
+}
+
+.admin-stat-icon.green,
+.admin-quick-icon.green {
+  color: #4bc994;
+  background: rgba(75, 201, 148, 0.13);
+}
+
+.admin-stat-icon.orange,
+.admin-quick-icon.orange {
+  color: #e6b65c;
+  background: rgba(230, 182, 92, 0.13);
+}
+
+.admin-stat-label {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.admin-stat-card > strong {
+  font-size: 29px;
+  font-weight: 700;
+}
+
+.admin-stat-note {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--color-text-secondary);
+  font-size: 12px;
+}
+
+.admin-stat-note svg {
+  color: var(--color-success);
+}
+
+.admin-main-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.6fr) minmax(280px, 1fr);
+  gap: 20px;
+  align-items: start;
+}
+
+.admin-panel {
+  padding: 24px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  min-width: 0;
+}
+
+.admin-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.admin-panel-header h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.admin-panel-header p {
+  margin: 0;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+.admin-pending-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 10px;
+  color: #e6b65c;
+  background: rgba(230, 182, 92, 0.12);
+  border-radius: 20px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.admin-bookings-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-booking-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 17px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.admin-booking-info {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  min-width: 0;
+}
+
+.admin-booking-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  color: var(--color-primary);
+  background: rgba(150, 117, 245, 0.14);
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.admin-booking-details {
+  min-width: 0;
+}
+
+.admin-booking-details h3 {
+  margin: 0 0 5px;
+  font-size: 14px;
+}
+
+.admin-booking-details p {
+  margin: 0 0 5px;
+  font-size: 13px;
+}
+
+.admin-booking-details > span {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.admin-booking-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 9px;
+  flex-shrink: 0;
+}
+
+.admin-status {
+  padding: 6px 9px;
+  border-radius: 20px;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+.admin-status.waiting {
+  color: #e6b65c;
+  background: rgba(230, 182, 92, 0.12);
+}
+
+.admin-status.confirmed {
+  color: #4bc994;
+  background: rgba(75, 201, 148, 0.12);
+}
+
+.admin-status.canceled {
+  color: #e45c65;
+  background: rgba(228, 92, 101, 0.12);
+}
+
+.admin-action-buttons {
+  display: flex;
+  gap: 7px;
+}
+
+.admin-action-buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.admin-confirm-button {
+  color: var(--color-success);
+  background: rgba(53, 184, 121, 0.1);
+}
+
+.admin-confirm-button:hover {
+  background: rgba(53, 184, 121, 0.2);
+  border-color: var(--color-success);
+}
+
+.admin-cancel-button {
+  color: var(--color-danger);
+  background: rgba(228, 92, 101, 0.1);
+}
+
+.admin-cancel-button:hover {
+  background: rgba(228, 92, 101, 0.2);
+  border-color: var(--color-danger);
+}
+
+.admin-side-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 0;
+}
+
+.admin-quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.admin-quick-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 11px;
+  color: var(--color-text);
+  text-align: left;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.admin-quick-link:hover {
+  background: var(--color-card);
+  border-color: var(--color-border);
+}
+
+.admin-quick-link > span:nth-child(2) {
+  flex: 1;
+  font-size: 13px;
+}
+
+.admin-quick-link > svg {
+  color: var(--color-text-secondary);
+}
+
+.admin-quick-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.admin-orders-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-order-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.admin-order-item > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.admin-order-item strong {
+  font-size: 13px;
+}
+
+.admin-order-item span,
+.admin-order-item small {
+  color: var(--color-text-secondary);
+  font-size: 11px;
+}
+
+.admin-order-price {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.admin-tip {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 20px;
+  background: rgba(150, 117, 245, 0.08);
+  border: 1px solid rgba(150, 117, 245, 0.2);
+  border-radius: var(--border-radius);
+}
+
+.admin-tip-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  color: var(--color-primary);
+  background: rgba(150, 117, 245, 0.14);
+  border-radius: 10px;
+}
+
+.admin-tip strong {
+  font-size: 14px;
+}
+
+.admin-tip p {
+  margin: 6px 0 0;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1100px) {
+  .admin-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-main-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-side-column {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 700px) {
+  .admin-welcome {
+    padding: 22px;
+  }
+
+  .admin-welcome-icon {
+    display: none;
+  }
+
+  .admin-side-column {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-panel {
+    padding: 18px;
+  }
+
+  .admin-booking-item {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-booking-item {
+    flex-direction: column;
+  }
+
+  .admin-booking-actions {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+
+  .admin-panel-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-pending-badge {
+    align-self: flex-start;
+  }
+}

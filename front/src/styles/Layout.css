@@ -1,0 +1,215 @@
+
+/* ========================================
+   1. Общий макет
+======================================== */
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+/* ========================================
+   2. Шапка сайта
+======================================== */
+
+.header {
+  position: relative;
+  z-index: 10;
+
+  width: 100%;
+
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: var(--shadow);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  max-width: 1440px;
+  min-height: 76px;
+
+  margin: 0 auto;
+  padding: 14px 32px;
+
+  gap: 20px;
+}
+
+/* ========================================
+   3. Логотип
+======================================== */
+
+.logo {
+  color: var(--color-primary);
+  font-size: 25px;
+  font-weight: 700;
+  letter-spacing: -0.8px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.logo:hover {
+  color: var(--color-primary-hover);
+}
+
+/* ========================================
+   4. Навигация
+======================================== */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  gap: 14px 22px;
+}
+
+.navigation a {
+  position: relative;
+
+  color: var(--color-text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.navigation a:hover {
+  color: var(--color-primary);
+}
+
+.navigation a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.navigation a.active::after {
+  position: absolute;
+  right: 0;
+  bottom: -8px;
+  left: 0;
+
+  height: 2px;
+
+  background-color: var(--color-primary);
+  border-radius: 2px;
+
+  content: "";
+}
+
+/* ========================================
+   5. Основная область
+======================================== */
+
+.main-content {
+  flex: 1;
+  width: 100%;
+}
+
+/* ========================================
+   6. Подвал
+======================================== */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 75px;
+
+  padding: 20px max(24px, calc((100% - 1152px) / 2));
+
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+
+  color: var(--color-text-secondary);
+  font-size: 13px;
+}
+
+/* ========================================
+   7. Адаптация для планшетов
+======================================== */
+
+@media (max-width: 1024px) {
+  .header-container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
+
+    padding: 20px 24px;
+  }
+
+  .navigation {
+    justify-content: center;
+    gap: 16px 22px;
+  }
+}
+
+/* ========================================
+   8. Адаптация для телефонов
+======================================== */
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 18px 16px;
+    gap: 20px;
+  }
+
+  .navigation {
+    width: 100%;
+    justify-content: center;
+    gap: 16px 18px;
+  }
+
+  .navigation a {
+    font-size: 14px;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 18px;
+    text-align: center;
+  }
+}
+
+/* ========================================
+   9. Маленькие телефоны
+======================================== */
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 22px;
+  }
+
+  .header-container {
+    padding: 16px 12px;
+  }
+
+  .navigation {
+    gap: 14px 16px;
+  }
+
+  .navigation a {
+    font-size: 13px;
+  }
+
+  .navigation a.active::after {
+    bottom: -6px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
